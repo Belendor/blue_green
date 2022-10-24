@@ -1,5 +1,5 @@
 output "lb_dns_name" {
-  value = aws_lb.app.dns_name
+  value = "http://${aws_lb.app.dns_name}"
 }
 
 output "public_blue_ec2_ips" {
